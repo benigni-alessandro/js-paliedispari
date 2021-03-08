@@ -1,18 +1,18 @@
 // var parola = prompt("Inserisci una parola");
-var p_invertita = "";
-inverti(parola)
-function inverti(parola) {
-  for (i = parola.length - 1; i>=0 ; i--) {
-    document.write(parola.charAt(i));
-    p_invertita += parola.charAt(i);
-  }
-  if (parola === p_invertita) {
-    document.write(" La parola é polindroma");
-  } else {
-    document.write(" La parola non é polindroma");
-  }
-  return p_invertita;
-}
+// var p_invertita = "";
+// inverti(parola)
+// function inverti(parola) {
+//   for (i = parola.length - 1; i>=0 ; i--) {
+//     document.write(parola.charAt(i));
+//     p_invertita += parola.charAt(i);
+//   }
+//   if (parola === p_invertita) {
+//     document.write(" La parola é polindroma");
+//   } else {
+//     document.write(" La parola non é polindroma");
+//   }
+//   return p_invertita;
+// }
 
 
 var scegli = prompt("pari o dispari?");
@@ -32,9 +32,9 @@ function functionName(n_cpu, n_utente) {
   } else {
     document.write(" La somma dei 2 numeri è dispari")
   }
-}
-if (scegli="pari" && somma%2 ==0) {
+  if (scegli="pari" && somma%2 ==0) {
   document.write(" Hai vinto")
-} else {
+  } else {
   document.write(" Hai perso")
+  }
 }
