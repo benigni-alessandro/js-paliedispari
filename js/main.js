@@ -15,7 +15,7 @@
 // }
 
 
-var scegli = prompt("Pari o Dispari?");
+var scegli = prompt("pari o dispari?");
 var numero_utente = parseInt(prompt("Scegli un numero da 1 a 5"));
 randomcpu();
 functionName(cpu, numero_utente);
@@ -32,4 +32,9 @@ function functionName(n_cpu, n_utente) {
   } else {
     document.write(" La somma dei 2 numeri è dispari")
   }
+}
+if (scegli="pari" && somma%2 ==0) {
+  document.write(" Hai vinto")
+} else {
+  document.write(" Hai perso")
 }
