@@ -18,21 +18,23 @@ function inverti(parola) {
 var scegli = prompt("pari o dispari?");
 var numero_utente = parseInt(prompt("Scegli un numero da 1 a 5"));
 randomcpu();
-functionName(cpu, numero_utente);
+pari_dispari(cpu, numero_utente);
 
 function randomcpu() {
   cpu = Math.floor(Math.random() * 5) + 1;
   document.write(cpu + " è il numero del pc");
   return cpu;
 }
-function functionName(n_cpu, n_utente) {
+function pari_dispari(n_cpu, n_utente) {
   somma = n_cpu + n_utente;
   if (somma%2 ==0) {
     document.write(" La somma dei 2 numeri è pari")
   } else {
     document.write(" La somma dei 2 numeri è dispari")
   }
-  if (scegli="pari" && somma%2 ==0) {
+  if (scegli==="pari" && somma%2 ==0) {
+  document.write(" Hai vinto")
+  } else if (scegli==="dispari" && somma%2) {
   document.write(" Hai vinto")
   } else {
   document.write(" Hai perso")
